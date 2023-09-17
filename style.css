@@ -1,0 +1,140 @@
+/** 
+Hello Future Developer Thanks for Using w3pupil.com, 
+Check our website Regularly For New Snippets Post.
+
+Share & Support us
+**/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+:root{
+    --bg:#ffffff;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+body{
+    font-family: 'Mukta', sans-serif;
+    color:#a48f84;
+    background:linear-gradient(to right,#fdb46a, #e89466);
+}
+.container{
+    Height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+}
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center; 
+    width:45vw;
+    height:70vh;
+    background-color: #e89466;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.left-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:5vh 5vw;
+    width:60%;
+    height:60vh;
+    background:var(--bg);
+    border-radius:5px 0 0 5px;
+    column-gap:5px;
+}  
+.right-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:40%;
+    height:70vh;
+    background:var(--bg);
+    border-radius:0 5px 5px 0;
+    gap:.5vh;
+}
+.right-container-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height:23vh;
+    background:#fae9e0;
+    border-radius: 5px;
+}
+h2{
+    font-size: 35px;
+}
+h6{
+    font-size: 15px;
+}
+.left-container img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    border:5px solid #e89466;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.left-container button{
+    border-radius:30px;
+    margin:10px;
+    padding:5px;
+    width:70%;
+    height:40px;
+    background:var(--bg);
+    border: 3px solid #b8a99b;
+    color:#a48f84;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.left-container button:hover{
+    cursor: pointer;
+    background-color:#a48f84;
+    color:#ffffff;
+    transition:.5s;
+}
+@media only screen and (max-width: 1024px){
+    img{
+        height:100px;
+        width:100px;
+    }
+    .flex-container{
+        width:70vw;
+        height:50vh;
+        background-color: #e89466;
+        border-radius: 5px;
+    }
+    .left-container{
+        height:40vh;
+    }
+    .right-container{
+        height:50vh;
+    }
+}
+@media only screen and (max-width: 630px){
+    img{
+        height:100px;
+        width:100px;
+    }
+    .flex-container{
+        flex-direction: column;
+        width:80%;
+        height:100%;
+        background-color: #e89466;
+        border-radius:5px;
+    }
+    .left-container{
+        height:auto;
+        width:100%;
+        border-radius: 5px 5px 0 0;
+    }
+    .right-container{
+        width:100%;
+        height:50vh;
+        padding:5vh 5vw;
+        border-radius: 0 0 5px 5px;
+    }
+}
